@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pri: #b8d0d1;
+  --pri-fade: #9eb2b3;
+  --sec: #373b63;
+  --hw: #5e7835;
+}
+
+body {
+  background:var(--pri);
+  color:var(--sec);
+  font-size: 22px;
+  /* margin:1em; */
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+.hw {
+  color:var(--hw);
+}
+
+.vision {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.vision img {
+  /* width:800px; */
+  max-width: 100%;
+  position: relative;
+  z-index: 99;
+  /* height:100%; */
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -20%);
+  display: block;
+  border-left:1px solid var(--sec);
+  border-right:1px solid var(--sec);
+}
+
+header {
+  display:flex;
+  border-top:1px solid var(--sec);
+  border-bottom:1px solid var(--sec);
+}
+
+.block {
+  width:50%;
+  padding:1em;
+  /* background:lightgray; */
+}
+
+.line {
+  width:50vw;
+  position:fixed;
+  height:100vh;
+  border-right:1px solid var(--sec);
+  top:0;
+  left:0;
+}
+
+.forum {
+  display: flex;
+  border-bottom:1px solid var(--sec);
+  border-top:1px solid var(--sec);
+}
+
+.week {
+  display:flex;
+  flex-wrap:wrap;
+  border-bottom:1px solid var(--sec);
+}
+
+.old {
+  background:var(--pri-fade);
+}
+
+.week-title {
+  width:100%;
+  /* background:rgba(0, 0, 0, 0.19); */
+  /* padding:1em; */
+  display:flex;
+}
+
+.week-title .block {
+  padding:1em 1em .5em 1em;
+}
+
+.day {
+  padding-top: 0;
+  padding-left:4em;
+  position: relative;
+}
+
+.m::before {
+  content:"M";
+  position: absolute;
+  left:1em;
+  top:0;
+}
+
+.w::before {
+  content:"W";
+  position: absolute;
+  left:1em;
+  top:0;
+}
