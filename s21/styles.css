@@ -30,14 +30,25 @@
 body {
   background:var(--pri);
   color:var(--sec);
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 140%;
   /* margin:1em; */
   letter-spacing: 1px;
   font-family: 'iosevka web', sans-serif;
 }
 
+a {
+  color:inherit;
+  text-decoration: none;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+a:hover {
+  background:transparent;
+}
+
 ul {
-  /* list-style: none; */
   margin:0;
 }
 
@@ -86,6 +97,7 @@ header {
   border-right:1px solid var(--sec);
   top:0;
   left:0;
+  pointer-events: none;
 }
 
 .forum {
@@ -133,4 +145,46 @@ header {
   position: absolute;
   left:1em;
   top:0;
+}
+
+@media screen and (max-width: 800px) {
+  .line {
+    display:none;
+  }
+
+  .forum {
+    flex-direction: column;
+  }
+
+  .forum .block {
+    border-bottom: 1px solid var(--sec);
+  }
+
+  .forum .block:last-of-type {
+    border-bottom: transparent;
+  }
+
+  .week {
+    flex-direction: column;
+  }
+
+  .date1 {
+    order:3;
+  }
+
+  .m {
+    order:4;
+  }
+
+  .date2 {
+    order:1;
+  }
+
+  .w {
+    order:2;
+  }
+
+  .block {
+    width:100%;
+  }
 }
