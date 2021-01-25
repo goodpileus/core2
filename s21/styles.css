@@ -35,6 +35,7 @@ body {
   /* margin:1em; */
   letter-spacing: 1px;
   font-family: 'iosevka web', sans-serif;
+  margin-bottom: 2.3em;
 }
 
 a {
@@ -50,6 +51,7 @@ a:hover {
 
 ul {
   margin:0;
+  /* list-style: none; */
 }
 
 .hw {
@@ -98,6 +100,7 @@ header {
   top:0;
   left:0;
   pointer-events: none;
+  z-index: 99;
 }
 
 .forum {
@@ -129,11 +132,11 @@ header {
 
 .day {
   padding-top: 0;
-  padding-left:3.73em;
+  padding-left:2.1em;
   position: relative;
 }
 
-.m::before {
+/* .m::before {
   content:"M";
   position: absolute;
   left:1em;
@@ -145,6 +148,42 @@ header {
   position: absolute;
   left:1em;
   top:0;
+} */
+
+.day-label {
+  display: flex;
+  position: fixed;
+  bottom:0;
+  left:0;
+  border-top: 1px solid var(--sec);
+  width:100vw;
+  background:var(--pri);
+  z-index: 9;
+  flex-wrap: wrap;
+}
+
+.day-label .block {
+  text-align: center;
+  padding: .5em;
+}
+
+.key {
+  display: flex;
+  border-bottom: 1px solid var(--sec);
+  font-size: 80%;
+
+}
+
+.key-block {
+  background:var(--pri);
+  width:100%;
+  position: relative;
+  z-index: 9999;
+  text-align: center;
+}
+
+.hw-key {
+  color: var(--hw);
 }
 
 @media screen and (max-width: 800px) {
@@ -184,7 +223,31 @@ header {
     order:2;
   }
 
+  .day {
+    padding-top: 0;
+    padding-left:3.73em;
+    position: relative;
+  }
+
+  .m::before {
+    content:"M";
+    position: absolute;
+    left:1em;
+    top:0;
+  }
+
+  .w::before {
+    content:"W";
+    position: absolute;
+    left:1em;
+    top:0;
+  }
+
   .block {
     width:100%;
+  }
+
+  .day-label {
+    display:none;
   }
 }
