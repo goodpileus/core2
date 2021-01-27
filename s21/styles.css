@@ -43,6 +43,8 @@ a {
   text-decoration: none;
   background:rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  /* display: inline-block; */
+  padding: 0 6px;
 }
 
 a:hover {
@@ -63,6 +65,10 @@ ul {
 header {
   display:flex;
   border-bottom:1px solid var(--sec);
+}
+
+.crossed-out {
+  text-decoration: line-through;
 }
 
 .vision {
