@@ -56,6 +56,11 @@ a:hover {
   background:transparent;
 }
 
+em {
+  font-family: cursive;
+  font-style: normal
+}
+
 ul {
   margin:0;
   /* list-style: none; */
