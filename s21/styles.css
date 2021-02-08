@@ -5,6 +5,7 @@
 :root {
   --pri: #b8d0d1;
   --pri-fade: #9eb2b3;
+  --current: rgba(255, 255, 255, 0.15);
   --sec: #373b63;
   --hw: #5e7835;
 }
@@ -61,7 +62,7 @@ em {
   font-style: normal
 }
 
-ul {
+ul, ol {
   margin:0;
   /* list-style: none; */
 }
@@ -131,8 +132,8 @@ header {
   border-bottom:1px solid var(--sec);
 }
 
-.old {
-  background:var(--pri-fade);
+.current {
+  background:var(--current);
 }
 
 .week-title {
