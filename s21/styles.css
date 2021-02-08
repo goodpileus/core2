@@ -42,6 +42,7 @@ body {
 img {
   max-width: 100%;
   opacity: .8;
+  /* border: 1px solid var(--sec); */
 }
 
 a {
