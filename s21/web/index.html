@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>speculative space</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../styles.css">
+
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="../img/favi.png">
+
+  <style>
+    header {
+      border-bottom:none;
+    }
+
+    hr {
+      border:0;
+      height:3em;
+    }
+
+    .float {
+      position: fixed;
+      right:0;
+      top:50%;
+      width:50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    img {
+      max-width: 70%;
+    }
+
+    @media screen and (max-width: 800px) {
+      .float{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="line"></div>
+  <div class="block back-wrap"><a href="../index.html">back</a></div>
+  <header>
+    <div class="block">
+      <h1>web workshop</h1>
+      <p>to download</p>
+      <ul>
+        <li><a href="https://atom.io/" target="_blank">Atom</a></li>
+        <li><a href="https://www.google.com/chrome/" target="_blank">Chrome</a></li>
+        <li><a href="template.zip">template</a></li>
+      </ul>
+
+      <hr>
+
+      <p>day 1</p>
+      <ul>
+        <li>html tags</li>
+        <ul>
+          <li>h1, h2, h3...</li>
+          <li>p</li>
+          <li>img</li>
+          <li>a</li>
+          <li>ul</li>
+          <li>ol</li>
+          <li>li</li>
+          <li>div</li>
+          <li>span</li>
+        </ul>
+        <li>chrome inspection tool</li>
+        <li>*break*</li>
+        <li>common css properties</li>
+        <ul>
+          <li>background</li>
+          <li>color</li>
+          <li>font-size</li>
+          <li>font-family</li>
+          <li>border</li>
+        </ul>
+      </ul>
+
+      <hr>
+
+      <p>day 2</p>
+      <ul>
+        <li>css continued</li>
+        <ul>
+          <li>height</li>
+          <li>width</li>
+          <li>margin</li>
+          <li>padding</li>
+          <li>position:</li>
+          <ul>
+            <li>fixed</li>
+            <li>absolute</li>
+          </ul>
+          <li>hover</li>
+        </ul>
+        <li><a href="https://handmade-web.net/spring21/projects/class-site.html" target="_blank">github hosting</a></li>
+        <li>tumblr tweaking (maybe next monday)</li>
+      </ul>
+
+      <hr>
+
+      <p>beyond</p>
+      <ul>
+        <li><a href="assets/html.pdf" target="_blank">HTML slides</a></li>
+        <li><a href="assets/css.pdf" target="_blank">CSS slides</a></li>
+        <li><a href="https://handmade-web.net/spring21/lessons.html" target="_blank">basics/tips</a></li>
+        <li><a href="https://handmade-web.net/spring21/resources.html" target="_blank">resources</a></li>
+        <li><a href="https://handmade-web.net/spring21/library.html" target="_blank">readings</a></li>
+      </ul>
+    </div>
+    <div class="block">
+      <div class="float">
+        <img src="carpet.gif">
+      </div>
+    </div>
+  </header>
+
+  <script src="../js/jquery.min.js"></script>
+</body>
+</html>
