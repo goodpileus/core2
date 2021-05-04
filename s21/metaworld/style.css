@@ -23,7 +23,7 @@ img {
 .doorway {
   width:130px;
   height:130px;
-  background:black;
+  /* background:black; */
   margin:20px;
   /* border-radius:20px; */
 }
