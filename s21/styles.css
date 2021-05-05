@@ -136,6 +136,18 @@ header {
   border-top:1px solid var(--sec);
 }
 
+.metaportal {
+  border-bottom:1px solid var(--sec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  background:var(--pri);
+  position: relative;
+  z-index: 9999;
+  height:250px;
+}
+
 .week {
   display:flex;
   flex-wrap:wrap;
@@ -198,7 +210,6 @@ header {
   display: flex;
   border-bottom: 1px solid var(--sec);
   font-size: 80%;
-
 }
 
 .key-block {
@@ -216,6 +227,58 @@ header {
 .note {
   font-size: 80%;
 }
+
+.title {
+  padding: 30px 45px 30px 50px;
+  border-radius: 50%;
+  /* font-family: serif; */
+  text-transform: uppercase;
+}
+.title span {
+		font-size:18px;
+		animation:jumb .9s infinite ease-in-out alternate;
+    padding-right:5px;
+		transform:translateY(2px);
+    display:inline-block;
+	}
+	@keyframes jumb {
+		0% {
+			transform:translateY(2px);
+		}
+		100% {
+			transform:translateY(-2px);
+		}
+	}
+	.title span:nth-child(1) {
+		animation-delay:0s;
+	}
+	.title span:nth-child(2) {
+		animation-delay:.1s;
+	}
+	.title span:nth-child(3) {
+		animation-delay:.2s;
+	}
+	.title span:nth-child(4) {
+		animation-delay:.3s;
+	}
+	.title span:nth-child(5) {
+		animation-delay:.4s;
+	}
+	.title span:nth-child(6) {
+		animation-delay:.5s;
+	}
+	.title span:nth-child(7) {
+		animation-delay:.6s;
+	}
+	.title span:nth-child(8) {
+		animation-delay:.7s;
+	}
+	.title span:nth-child(9) {
+		animation-delay:.8s;
+	}
+	.title span:nth-child(10) {
+		animation-delay:.9s;
+	}
 
 @media screen and (max-width: 800px) {
   .line {
